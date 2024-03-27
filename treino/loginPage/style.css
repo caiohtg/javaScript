@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(105, 103, 103);
+    padding: 50px;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    height: 500px;
+    width: 900px;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: 20px 20px;
+    grid-template-rows: 100px;
+}
+
+section {
+    background-image: linear-gradient(to bottom, rgb(125, 73, 245) 5%, rgb(99, 32, 253));
+    height: 500px;
+    width: 330px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px
+}
+
+.criar {
+    padding-left: 450px;
+    font: normal 16px arial;  
+    width: 500px;
+    
+}
+
+.inputCriar {
+    background-color: rgba(165, 165, 165, 0.452);
+    border: none;
+}
+
+.criar > h1 {
+    padding-top: 55px;
+    padding-left: 45px;
+    color: rgb(99, 32, 253);
+    
+}
+
+.criar > p {
+    text-align: justify;
+    color: rgb(100, 100, 100);
+}
+
+input {
+    height: 35px;
+    width: 320px;
+    margin: none;
+}
+
+.P {
+    margin-top: 0px;
+    margin-bottom: 0%;
+    font: bold 14px arial;
+    color: rgb(44, 43, 43);
+    
+    
+}
+
+#criarConta1 {
+    text-align: center;
+    width: 250px;
+    border-radius: 20px;
+    background-color: rgb(99, 32, 253);
+    font: bold 14px arial;
+    color: white;
+    border: none;
+
+}
+
+.butao {
+    padding-top: 20px;
+    padding-left: 37px;
+}
+
+.pagLogin {
+    font: normal 14px arial;
+    padding-top: 150px;
+    padding-left: 43px;
+    padding-right: 43px;
+    color: white;
+    text-align: center;
+}
+
+#bemvindo {
+    font: bold 18px arial;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    
+    
+}
+
+.botaoLogar {
+    background-color: rgb(99, 32, 253);
+    text-align: center;
+    font: bold 14px arial;
+    color: white;
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+@keyframes wipe-in-right {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:right"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+  }
+

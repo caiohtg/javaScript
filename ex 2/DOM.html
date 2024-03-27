@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(49, 118, 247);
+            color: rgb(2, 7, 36);
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <!--DOM = Document Object Model
+    Conjunto de objetos dentro do navegador que da acesso aos componentes internos do site
+    ARVORE DOM
+    window -> location, document, history -> html -> head(meta, title...) body(h1, p, div...)-->
+    <h1>Iniciando DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong></p>
+    <div id="msg">Clique aqui</div>
+
+    <script>
+        var body = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+       /* var div = document.getElementById('msg')
+        div.style.background = 'green'
+        div.style.color = 'white'
+        */
+       var div = document.querySelector('div#msg')
+       div.style.color = 'red'
+        
+    </script>
+    
+</body>
+</html>

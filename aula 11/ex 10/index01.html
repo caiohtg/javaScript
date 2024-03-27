@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio JS</title>
+    <style>
+        body {
+            background-color: rgb(20, 117, 12);
+            padding: 100px;
+        }
+        main {
+            border-radius: 150px;
+            background-color: rgb(0, 0, 255);
+            font: normal 18px arial ;
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            
+        }
+
+        div#style {
+            background-color: rgb(255, 255, 0);
+            width: 700px;
+            height: 400px;
+            margin: auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="style">
+    <main>
+    <h1>De que País você é?</h1>
+    <input type="text" id="pais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+</div>
+</main>
+
+    <script>
+        var p = document.getElementById('pais')
+        var res = document.getElementById('res')
+        function verificar(){   
+            var pais = p.value
+            res.innerHTML = `<p>Seu país é <strong>${pais}</strong></p>`
+                if(pais != 'Brasil') {
+                    res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>, seja bem-vindo ao <strong>Brasil!</strong></p>`
+                }
+
+        }
+    </script>
+    
+</body>
+</html>

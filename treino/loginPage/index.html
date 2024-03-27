@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            
+                <div class="pagLogin">
+                    <div id="bemvindo"><h1>Bem-Vindo de volta!</h1></div>
+                    <div><p>Já tem uma conta em nosso site?</p></div>
+                    <div><p>Faça o login com sua conta</p></div>
+                    <div><input class="botaoLogar" type="button" value="Sing in" id = "logarConta2" onclick="transição()"></button></div>
+                </div>
+
+        </section>
+            <div class="criar">
+                <h1 style="padding-bottom: 5px;">Criar uma Conta</h1>
+                    <span><p>Ou cadastre-se usando seu e-mail</p></span>
+                    
+                    <div>
+                         <p class="P">Nome: </p><input class="inputCriar" type="text" name="nome" id="nomeCriar">
+                    </div>
+                <br>
+                    <div>
+                         <p class="P">E-mail: </p><input class="inputCriar" type="email" name="email" id="emailCriar" >
+                    </div> 
+                <br>
+                    <div>
+                         <p class="P">Senha: </p><input class="inputCriar" type="password" name="senha" id="senhaCriar" >
+                    </div>
+                <br>
+                    <div class="butao">
+                         <input class="botaoCriar" type="button" value="Sing up" onclick="clicar()" id="criarConta1">
+                    </div>
+            </div> 
+    </main>
+
+<script src="ambiente.js"></script>
+</body>
+</html>
